@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (confettiBtn) {
         confettiBtn.addEventListener('click', () => {
             confetti({
-                particleCount: 1500,
-                spread: 250,
+                particleCount: 500,
+                spread: 180,
                 origin: { y: 0.6 }
             });
         });
