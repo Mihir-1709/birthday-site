@@ -31,40 +31,6 @@ body {
     animation: gradient 15s ease infinite;
 }
 
-/* --- Responsive Design for Mobile --- */
-@media (max-width: 600px) {
-    .card {
-        /* Reduce padding on small screens to give content more space */
-        padding: 25px;
-        min-height: 95vh; /* Allow card to take up more vertical space */
-    }
-
-    h1 {
-        font-size: 2rem; /* Make main headings slightly smaller */
-    }
-
-    h2 {
-        font-size: 1.5rem; /* Make subheadings smaller */
-    }
-
-    .gallery {
-        /* This is the key change: switch to a 1-column grid (a list) */
-        grid-template-columns: 1fr;
-        gap: 15px; /* Add a bit more vertical space between images */
-    }
-
-    .gallery img {
-        /* Make images taller in the list view so they are more impactful */
-        height: 200px; 
-    }
-
-    .next-btn {
-        padding: 12px 25px;
-        font-size: 0.9rem;
-    }
-}
-
-/* NEW: Keyframes for the gradient animation */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -267,4 +233,34 @@ ul li {
 }
 #confetti-btn:hover {
     background-color: #218838;
+}
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 600px) {
+    .card {
+        padding: 25px;
+        min-height: 95vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+
+    .next-btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
 }
