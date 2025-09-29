@@ -256,7 +256,7 @@ ul li {
     }
 
     .gallery img {
-        height: 200px;
+        height: 100%;
     }
 
     .next-btn {
@@ -264,3 +264,4 @@ ul li {
         font-size: 0.9rem;
     }
 }
+
